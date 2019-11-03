@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!--
+    https://milligram.io/   -->
+
+
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <!-- <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"> -->
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/static/bajaj.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"> -->
+
+
+</head>
+
+<body class="bajajapp"><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.24.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+    
+    <div class="ui borderless menu mt-none">
+        <div class="ui container">
+            <a class="header item" href="/">
+                <img src="/static/images/logo.png" class="ui small image">
+            </a>
+            
+            <div class="right menu">
+                <!-- <div class="item">Add</div> -->
+                <div class="ui simple dropdown item">
+                    tinkune-bajaj <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <!-- <div class="header">Pokhara</div> -->
+                        <!-- <div class="item">Pokhara</div> -->
+                        <!-- <div class="divider"></div> -->
+                        <a class="item" href="/logout/">Logout (dealer1)</a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="is-active"><a href="#" aria-current="page">New Customer</a></li>
+        </ul>
+    </nav> -->
+
+    
+    <section class="ui masterhead  ">
+        <div class="ui container clearfix">
+
+
+            
+            <!-- <button class="ui right floated button primary">New Customer</button> -->
+            
+
+            <h2 class="ui huge header mt-none ">
+                
+                <div class="sub header">
+                    
+                </div>
+            </h2>
+
+        </div>
+    </section>
+    
+
+
+    
+
+    <section class="ui container">
+        
+<div class="">
+
+
+    <div class="ui basic segment ">
+
+        <!-- <div class="ui icon header">
+            <i class="search icon"></i>
+            Returning Customer
+        </div> -->
+
+
+
+        <div class="ui labeled icon compact menu fluid one item blue ">
+            <a href="/customer/register" class="item">
+                <i class="user outline icon"></i>
+                New Customer Registration
+            </a>
+        </div>
+
+
+
+        <br>
+
+        <!-- <div class="ui primary button">Add New Customer</div> -->
+        <div class="ui horizontal divider">
+            Or
+        </div>
+
+        <form class="ui form customer--search" action="/" method="GET">
+
+
+            <div class="ui fluid left icon action input">
+                <input type="text" placeholder="" name="search_query" value="111111">
+                <i class="search icon"></i>
+                <button class="ui button primary" type="submit">Search</button>
+            </div>
+
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui radio checkbox checked">
+                        <input type="radio" checked="checked" 
+                            name="search_type" value="citizenship" tabindex="0" class="hidden">
+                        <label>Citizenship</label>
+                    </div>
+                </div>
+                <div class="field ">
+                    <div class="ui radio checkbox ">
+                        <input type="radio" 
+                            name="search_type" value="license" tabindex="0" class="hidden">
+                        <label>License</label>
+                    </div>
+                </div>
+
+            </div>
+            <input type="submit" hidden="true" />
+        </form>
+
+        <div class="resul">
+            
+            
+            <br>
+            
+            <div class="ui icon message segment">
+                <i class="cross icon"></i>
+                <i class="close icon"></i>
+                Customer with citizenship &nbsp;<b>111111</b>&nbsp; not found!
+            </div>
+            
+            
+            
+        </div>
+
+
+
+        <!-- <div class="ui aligned middle small aligned center">
+
+            <a href="/customer/register" class="ui icon header mt-none">
+                <i class="user outline icon"></i>
+                New Customer
+            </a>
+
+            <a href="/customer/register" class="circular ui icon button primary">
+                <i class="icon plus"></i> Register
+            </a>
+        </div> -->
+
+
+        <div class="ui  header aligned center">
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <!--
+
+    <div class="ui segment">
+        <form action="/customer/search" method="GET" class="ui form fields">
+            <div class="field">
+
+                <input type="search" value="111111" name="search_query">
+            </div>
+            <div class="ui input"></div>
+            <input type="submit" class="ui submit button right floated secondary" value="Search">
+
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui radio checkbox checked">
+                        <input type="radio" checked="checked" 
+                            name="search_type" value="citizenship" tabindex="0" class="hidden">
+                        <label>Citizenship</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox ">
+                        <input type="radio" 
+                            name="search_type" value="license" tabindex="0" class="hidden">
+                        <label>License</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <input type='hidden' name='csrfmiddlewaretoken' value='BgyZPAAHvVDxjnotr8g3lHRGVGY0eMGbkj5BmPneQ2CjCD6a2XEV1OqFNrUTru7h' />
+
+
+
+        </form>
+    </div>
+-->
+    <!--
+<div class="ui compact  inverted labeled blue borderless  icon menu">
+        <a class="active item" href="/">
+            <i class="home icon"></i> Home
+        </a>
+        <a class="item" href="/customer/register">
+            <i class="plus icon"></i> New Customer
+        </a>
+        <a class=" item" href="/customer/search"">
+     <i class=" search icon"></i> Search
+        </a>
+    </div>
+</div>
+
+-->
+
+    
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="/static/bajaj.js"></script>
+
+</body>
+
+</html>

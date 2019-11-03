@@ -1,0 +1,54 @@
+		/*button*/
+
+.btn{
+	width:200px;
+	height:40px;
+	border-radius:4px;
+	font-family: roboto,sans-serif;
+}
+.btn-primary{
+	background: linear-gradient(#007abe,#004da8);
+
+
+}
+		/*button-end*/
+
+
+		/*search */
+
+
+
+
+
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+.search-text{
+	font-family: FontAwesome;
+	width: 100%;
+	border-radius:24px;
+	padding:8px;
+}
+
+.search::-webkit-input-placeholder { 
+font-family: FontAwesome;
+font-weight: normal;
+}
+
+
+/*<!-- registration confirmation  -->*/
+
+.confirmation {
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+    margin-top:40px;
+    background: grey;
+}
+.title{
+    width:100%;
+    text-align: center;
+    
+}
+.title h2{
+    font-weight: lighter;
+    letter-spacing: 5px;
+}

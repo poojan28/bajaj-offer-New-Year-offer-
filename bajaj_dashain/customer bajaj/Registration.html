@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>registration </title>
+    <!-- <link href="css/style1.css" rel="stylesheet">
+    <link href="css/registration.css" rel="stylesheet"> -->
+    <link href="css/commonfile.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        
+
+    </style>
+   
+</head>
+<body>
+        <div class='page-wrapper'>
+                <div class='row'>
+                  <div class='column1'>
+                    <div class='first-column'>
+                            <div class="reg-container ">
+                                    
+                                   
+                                    <div class="main" style="width:80%; margin: 0 auto;padding:30px;">
+                                            <div class="nav-header" style=" display:flex; justify-content: space-between; ">
+                                                <div class="brand-logo">
+                                                    <a href="/" class="logo"><img src="image/brand-logo.png" alt=""></a>
+                                                </div>
+                                                
+                                                <nav>
+                                                    <ul style="margin-top:1em;">
+                                                    <li style="list-style: none;"><a style="color:white; text-decoration: none; font-family: 'Noto Sans', sans-serif;" href="">ABOUT</a></li></ul>
+                                                    </ul>  
+                                                </nav>
+                                                </div> 
+                                    </div>
+                                    <div class= wrapper>
+                                            <div class="wrapper--container">
+                                                    <div class="wrapper--content wrapper-item-1">
+                                                            <img src="image/luckydraw.png" class="rotate" width="auto" height="400px"/>
+                                        
+                                                    </div>
+                                              
+                                              <div class="wrapper--content wrapper-item-2">
+                                                  <div class="wrapper--content-item ">
+                                                      <img src="image/BajajDashain2Logo.png" alt="" width="auto" height="300">
+                                                  </div>
+                                                 
+                                                  
+                                  
+                                              </div>
+                                          </div>
+                                   </div> 
+                                </div>
+                    </div>
+                  </div>
+                  <div class='column2'>
+                    <div class='second-column'>
+                            <section class="registration-wrapper  ">  
+                                    <form id="customer--registration "   class="custom-form customer-registration" method="">
+                                          
+                                         <div class="register-item input-icons" >
+                                                <h2 style="color:#4267b2; font-family: 'Roboto', sans-serif;">Complete Your Submission</h2>
+                                            
+                                            <input type='hidden' name='csrfmiddlewaretoken' value='2n0Tco8JDJ5s0JlWreNaRsn65V9OVQV6oCU6AjdpX1DAfK5JVbrgvZ7ePZLGSLDX' />
+                                            
+                                            <p><i class="fa fa-user icon"></i><input type="text" placeholder="Full Name " name="name" maxlength="200" required id="id_name" /></p>
+                                                <p> <i class="fa fa-phone icon" aria-hidden="true"></i><input  type="text" placeholder=" Phone Number" name="phone" maxlength="20" required id="id_phone" /></p>
+                                                <p> <i class="fa fa-envelope icon"></i></i> <input type="email" placeholder="Email Address" name="email" maxlength="254" id="id_email" /></p>
+                                                <p> <i class="fa fa-id-card icon"></i><input  placeholder=" Citizenship Number"type="text" name="citizenship" maxlength="200" id="id_citizenship" /></p>
+                                                <p><i class="fa fa-id-card icon"></i><input type="text" placeholder="  License Number" name="license" maxlength="200" id="id_license" /></p>
+                                                <p><i class="fa fa-compass icon"></i><select name="district" id="id_district">
+                                                <option value="" selected > Select District</option>
+                                                
+                                                <option value="Achham">Achham</option>
+                                                
+                                                <option value="Arghakhanchi">Arghakhanchi</option>
+                                                
+                                                <option value="Baglung">Baglung</option>
+                                                
+                                                <option value="Baitadi">Baitadi</option>
+                                                
+                                                <option value="Bajhang">Bajhang</option>
+                                                
+                                                <option value="Bajura">Bajura</option>
+                                                
+                                                <option value="Banke">Banke</option>
+                                                
+                                                <option value="Bara">Bara</option>
+                                                
+                                                <option value="Bardiya">Bardiya</option>
+                                                
+                                                <option value="Bhaktapur">Bhaktapur</option>
+                                                
+                                                <option value="Bhojpur">Bhojpur</option>
+                                                
+                                                <option value="Chitwan">Chitwan</option>
+                                                
+                                                <option value="Dadeldhura">Dadeldhura</option>
+                                                
+                                                <option value="Dailekh">Dailekh</option>
+                                                
+                                                <option value="Dang">Dang</option>
+                                                
+                                                <option value="Darchula">Darchula</option>
+                                                
+                                                <option value="Dhading">Dhading</option>
+                                                
+                                                <option value="Dhankuta">Dhankuta</option>
+                                                
+                                                <option value="Dhanusa">Dhanusa</option>
+                                                
+                                                <option value="Dolakha">Dolakha</option>
+                                                
+                                                <option value="Dolpa">Dolpa</option>
+                                                
+                                                <option value="Doti">Doti</option>
+                                                
+                                                <option value="Eastern Rukum">Eastern Rukum</option>
+                                                
+                                                <option value="Gorkha">Gorkha</option>
+                                                
+                                                <option value="Gulmi">Gulmi</option>
+                                                
+                                                <option value="Humla">Humla</option>
+                                                
+                                                <option value="Ilam">Ilam</option>
+                                                
+                                                <option value="Jajarkot">Jajarkot</option>
+                                                
+                                                <option value="Jhapa">Jhapa</option>
+                                                
+                                                <option value="Jumla">Jumla</option>
+                                                
+                                                <option value="Kailali">Kailali</option>
+                                                
+                                                <option value="Kalikot">Kalikot</option>
+                                                
+                                                <option value="Kanchanpur">Kanchanpur</option>
+                                                
+                                                <option value="Kapilvastu">Kapilvastu</option>
+                                                
+                                                <option value="Kaski">Kaski</option>
+                                                
+                                                <option value="Kathmandu">Kathmandu</option>
+                                                
+                                                <option value="Kavrepalanchok">Kavrepalanchok</option>
+                                                
+                                                <option value="Khotang">Khotang</option>
+                                                
+                                                <option value="Lalitpur">Lalitpur</option>
+                                                
+                                                <option value="Lamjung">Lamjung</option>
+                                                
+                                                <option value="Mahottari">Mahottari</option>
+                                                
+                                                <option value="Makwanpur">Makwanpur</option>
+                                                
+                                                <option value="Manang">Manang</option>
+                                                
+                                                <option value="Morang">Morang</option>
+                                                
+                                                <option value="Mugu">Mugu</option>
+                                                
+                                                <option value="Mustang">Mustang</option>
+                                                
+                                                <option value="Myagdi">Myagdi</option>
+                                                
+                                                <option value="Nawalpur">Nawalpur</option>
+                                                
+                                                <option value="Nuwakot">Nuwakot</option>
+                                                
+                                                <option value="Okhaldhunga">Okhaldhunga</option>
+                                                
+                                                <option value="Palpa">Palpa</option>
+                                                
+                                                <option value="Panchthar">Panchthar</option>
+                                                
+                                                <option value="Parasi">Parasi</option>
+                                                
+                                                <option value="Parbat">Parbat</option>
+                                                
+                                                <option value="Parsa">Parsa</option>
+                                                
+                                                <option value="Pyuthan">Pyuthan</option>
+                                                
+                                                <option value="Ramechhap">Ramechhap</option>
+                                                
+                                                <option value="Rasuwa">Rasuwa</option>
+                                                
+                                                <option value="Rautahat">Rautahat</option>
+                                                
+                                                <option value="Rolpa">Rolpa</option>
+                                                
+                                                <option value="Rupandehi">Rupandehi</option>
+                                                
+                                                <option value="Salyan">Salyan</option>
+                                                
+                                                <option value="Sankhuwasabha">Sankhuwasabha</option>
+                                                
+                                                <option value="Saptari">Saptari</option>
+                                                
+                                                <option value="Sarlahi">Sarlahi</option>
+                                                
+                                                <option value="Sindhuli">Sindhuli</option>
+                                                
+                                                <option value="Sindhupalchok">Sindhupalchok</option>
+                                                
+                                                <option value="Siraha">Siraha</option>
+                                                
+                                                <option value="Solukhumbu">Solukhumbu</option>
+                                                
+                                                <option value="Sunsari">Sunsari</option>
+                                                
+                                                <option value="Surkhet">Surkhet</option>
+                                                
+                                                <option value="Syangja">Syangja</option>
+                                                
+                                                <option value="Tanahun">Tanahun</option>
+                                                
+                                                <option value="Taplejung">Taplejung</option>
+                                                
+                                                <option value="Terhathum">Terhathum</option>
+                                                
+                                                <option value="Udayapur">Udayapur</option>
+                                                
+                                                <option value="Western Rukum">Western Rukum</option>
+                                                
+                                                </select></p>
+                                                                           
+                                                                                    <input style="float: right;"type="submit" class="btn primary " value="Continue">
+                                                                            
+                                                                        </div>
+                                                                    
+                                                                    
+                                                                                                       
+                                    </form>
+                                    
+                                    
+                                
+                                    
+                                    <!-- </div> -->
+                                    
+                                    
+                                        </section> 
+                    </div>
+                  </div>
+                </div>
+        
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!--
+    https://milligram.io/   -->
+
+
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <!-- <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"> -->
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/static/bajaj.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"> -->
+
+
+</head>
+
+<body class="bajajapp"><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.24.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+    
+    <div class="ui borderless menu mt-none">
+        <div class="ui container">
+            <a class="header item" href="/">
+                <img src="/static/images/logo.png" class="ui small image">
+            </a>
+            
+            <div class="right menu">
+                <!-- <div class="item">Add</div> -->
+                <div class="ui simple dropdown item">
+                    tinkune-bajaj <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <!-- <div class="header">Pokhara</div> -->
+                        <!-- <div class="item">Pokhara</div> -->
+                        <!-- <div class="divider"></div> -->
+                        <a class="item" href="/logout/">Logout (dealer1)</a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="is-active"><a href="#" aria-current="page">New Customer</a></li>
+        </ul>
+    </nav> -->
+
+    
+    <section class="ui masterhead  ">
+        <div class="ui container clearfix">
+
+
+            
+            <!-- <button class="ui right floated button primary">New Customer</button> -->
+            
+
+            <h2 class="ui huge header mt-none ">
+                Customer Registration  
+                <div class="sub header">
+                    
+                </div>
+            </h2>
+
+        </div>
+    </section>
+    
+
+
+    
+
+    <section class="ui container">
+        
+
+<div class="ui segment raised padded customer-registration">
+<form class="ui form" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='cOLQj5kleoqjPGOv0rl8pKKhoZwJ7QaFVRisQk7Szvp58WwcBgJ05RjggKsCkyBL' />
+    <p><label for="id_name">Name:</label> <input type="text" name="name" maxlength="200" required id="id_name" /></p>
+<p><label for="id_phone">Phone:</label> <input type="text" name="phone" maxlength="20" required id="id_phone" /></p>
+<p><label for="id_phone2">Phone2:</label> <input type="text" name="phone2" maxlength="20" id="id_phone2" /></p>
+<p><label for="id_email">Email:</label> <input type="email" name="email" maxlength="254" id="id_email" /></p>
+<p><label for="id_citizenship">Citizenship:</label> <input type="text" name="citizenship" maxlength="200" required id="id_citizenship" /></p>
+<p><label for="id_license">License:</label> <input type="text" name="license" maxlength="200" required id="id_license" /></p>
+    <input type="submit" class="ui button primary " value="Add New Customer">
+</form>
+</div>
+
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="/static/bajaj.js"></script>
+
+</body>
+
+</html>

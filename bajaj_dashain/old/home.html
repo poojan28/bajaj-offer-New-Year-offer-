@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <style>
+            *{
+                margin:0px;
+            }
+            .wrapper{
+                width: 100%;
+            }
+            .container{
+                width:100%;
+                
+                display:grid;
+                grid-template-columns: 1fr;
+                grid-row-gap: 10px;
+                
+
+            }
+            .header{
+                width: 100%;
+                background:olivedrab;
+                height:100px;
+                display:flex;
+                align-content: center;
+                
+                
+            }
+            .content{
+                width:90%;
+                margin:0 auto;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                
+            }
+            
+                
+        
+            .brand-logo{
+                color:white;
+                font-weight: bold;
+                font-size:25px;
+            }
+             .nav ul{
+                display: flex;
+                flex-direction: row;
+            } 
+            .nav ul li{
+                padding:0 17px;
+                border-right: 1px solid black;
+                list-style: none;
+                color:white;
+                text-transform:uppercase;
+
+            }
+            .nav ul li:last-child{
+                border-right: none;
+            }
+            .nav ul li a{
+                text-decoration: none;
+                color:white;
+                
+            }
+            .main{
+                background:olive;
+                height:calc(100vh - 110px);
+                display: flex;
+                align-items: center;
+            }
+            .main-content{
+                width:80%;
+                margin:0 auto;
+                display: grid;
+                grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+                grid-column-gap: 10px;
+                grid-template-rows:300px;
+                
+            }
+            .content-col{
+                
+                
+               
+            }
+            .yellow-bg{
+                background:yellow;
+                
+            }
+            .pink-bg{
+                background:yellowgreen;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="header">
+                    <div class=" content">
+                            <div class="brand-logo">
+                                    <p>Kinley</p>
+                                </div>
+                                <nav class="nav">
+                                    <ul>
+                                        <li><a href="">Home</a></li>
+                                        <li><a href=""></a>About</li>
+                                        <li><a href=""></a>Contact</li>
+                                        <li><a href=""></a>Services</li>
+                                    </ul>
+                                </nav>
+                    </div>
+                    
+                </div>
+                <div class="main">
+                    <div class="main-content">
+                            <div class="content-col yellow-bg">
+                               1
+                            </div>
+                            <div class="content-col pink-bg">
+                              2
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

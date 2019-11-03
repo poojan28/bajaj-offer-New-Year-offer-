@@ -1,0 +1,459 @@
+.ui.header{
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+body{
+    
+    font-family: 'Montserrat', sans-serif!important;
+
+}
+.mt-none{
+    margin-top:0!important;
+}
+
+.ui.placeholder, .ui.placeholder .image.header:after, .ui.placeholder .line, .ui.placeholder .line:after, .ui.placeholder>:before {
+    background-color: transparent!important;
+}
+
+.dashboard--segment{
+    max-width:600px!important;
+}
+.customer--search .inline.fields {
+    margin-top:1em!important;
+}
+
+.bajajapp .ui.message{
+    border-radius:0;
+    background-color:#f8f8f9;
+}
+/*login*/
+.errorlist{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    background: white;
+    color: #ff5b5b;
+    background-color: #fff6f6;
+    color: #9f3a38;
+    box-shadow: 0 0 0 1px #e0b4b4 inset, 0 0 0 0 transparent;
+    position: relative;
+    min-height: 1em;
+    margin: 1em 0;
+    background: #f8f8f9;
+    padding: 1em 1.5em;
+    line-height: 1.4285em;
+}
+
+/*blue color customization*/
+
+.bajajapp .ui.primary.button, .ui.primary.buttons .button {
+    background-color: #0a51a1;
+}
+
+.bajajapp i.blue.icon{
+    color: #0a51a1!important;
+}
+
+h1.header{
+    color:skyblue;
+}
+
+.customer-registration{
+    margin-top:15px!important;
+}
+
+.customer-registration input {
+display: block;
+}
+
+<<<<<<< HEAD
+
+/*follow*/
+.ui.steps .step>.icon~.content {
+	text-align: center;
+}
+.ui.steps .step.active {
+	background:#2185d0;
+
+}
+.ui.steps .step.active:after {
+
+    background: #2185d0;
+   }
+.ui.steps .step>.icon~.content {
+    text-align: center;
+}
+.ui.steps .step.active .active-class {
+  color:white;  
+}
+.ui.steps .step .title~.active-class {
+    color:white;
+}
+
+i.icon.white:before {
+	color:white;
+}
+.ui.steps .step {
+	flex-direction: column;
+}
+/*lottery icon*/
+
+.offer-container{
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.ui[class*="three column"].grid>.column:not(.row), .ui[class*="three column"].grid>.row>.column {
+    width:none;
+    }
+.ui[class*="three column"].grid>.column:not(.row), .ui[class*="three column"].grid>.row>.column {
+    width: fit-content;
+}
+
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+/*flip--------------*/
+.f1_container {
+    
+    display: flex;
+    width: 450px;
+    height: 281px;
+    z-index : 1;
+    
+}
+.f1_container {
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+.f1_card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 1.0s linear;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+.f1_container.active .f1_card {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.face.back {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background-color: #aaa;
+}
+
+
+/*end lottery icon*/
+=======
+/*navbar*/
+.bajaj-top-navbar .image.small{
+max-width:100px;
+text-align: center;
+}
+
+.bajaj-customer-card{
+    max-width:385px!important;
+    
+}
+.bajaj-customer-card .section-customer--info{
+padding:0;
+}
+.section-customer--info .right.floated.content{
+    max-width: 55%;
+    overflow-wrap: break-word;
+}
+
+
+/* -------------Step Css ---------------*/
+
+.ui.steps .step{
+	flex-direction: column;
+}
+
+.ui.steps .step.active,.ui.steps .step.active .description,.ui.steps .step.active .title, .ui.steps .step.active:after{
+	background-color: #2185d0;
+	color: white;
+}
+
+.ui.steps .active.step .icon{
+	color: #fff;
+}
+
+.ui.steps .step .title{
+	padding: 1rem 0 0;
+}
+<<<<<<< HEAD
+
+/* ------------offer css ---------------*/
+
+.flexer{
+	display: flex;
+	flex-direction: row;
+}
+
+.ui. .flexer .card{
+	border: none;
+}
+=======
+>>>>>>> 1f477f05f24c57d1f67a4d40bcde767b51d6b524
+<<<<<<< HEAD
+
+/*congratulation image*/
+.ui.centered{
+	width:100%;
+	margin:0 auto;
+}
+img.ui.lg-image {
+    text-align: center;
+	
+}
+.ui.image {
+    max-width: 100%;
+    background-color: transparent;
+
+}
+.ui.text{
+
+	
+}
+.ui.relative{
+	
+}
+.ui.margin-top{
+	margin-top:50px;
+}
+/*...... congrats....*/
+text[Attributes Style] {
+    font-family:'Montserrat', sans-serif;
+}
+.ui.header{
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+body{
+    background-color:#e8e8e8;
+    font-family: 'Montserrat', sans-serif!important;
+
+}
+.mt-none{
+    margin-top:0!important;
+}
+.mt-sm{
+    margin-top:15px;
+}
+.transparent-bg{
+    background-color:transparent!important;
+}
+.no-border{
+    border:0!important;
+    box-shadow:none!important;
+}
+.text-center{
+    text-align: center;
+}
+
+.ui.placeholder, .ui.placeholder .image.header:after, .ui.placeholder .line, .ui.placeholder .line:after, .ui.placeholder>:before {
+    background-color: transparent!important;
+}
+
+.ui.basic.attached.segment{
+    border-color:transparent!important;
+ 
+}
+.ui.basic.attached.segment.red{
+    /* border-color:transparent!important; */
+    border-color:#c74a34!important;
+
+}
+
+.logo-link:hover{
+    background-color:#fff!important;
+}
+
+.dashboard--segment{
+    max-width:600px!important;
+}
+.customer--search .inline.fields {
+    margin-top:1em!important;
+}
+
+.bajajapp .ui.message{
+    border-radius:0;
+    background-color:#f8f8f9;
+}
+/*login*/
+.errorlist{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    background: white;
+    color: #ff5b5b;
+    background-color: #fff6f6;
+    color: #9f3a38;
+    box-shadow: 0 0 0 1px #e0b4b4 inset, 0 0 0 0 transparent;
+    position: relative;
+    min-height: 1em;
+    margin: 1em 0 0 0;
+    background: #f8f8f9;
+    padding: 1em 1.5em;
+    line-height: 1.4285em;
+}
+
+
+/*blue color customization*/
+
+.bajajapp .ui.primary.button, .ui.primary.buttons .button {
+    background-color: #013163;
+}
+
+.bajajapp i.blue.icon{
+    color: #0a51a1!important;
+    color: #013163!important;
+}
+
+h1.header{
+    color:skyblue;
+}
+
+.customer-registration{
+    margin-top:15px!important;
+}
+
+.customer-registration input {
+display: block;
+}
+
+/*navbar*/
+.bajaj-top-navbar .image.small{
+max-width:100px;
+text-align: center;
+}
+
+.bajaj-customer-card{
+    max-width:385px!important;
+    
+}
+.bajaj-customer-card .section-customer--info{
+padding:0;
+}
+.section-customer--info .right.floated.content{
+    max-width: 55%;
+    overflow-wrap: break-word;
+}
+
+.bajaj-customer-card .inverted.primary.label{
+    background-color:#013162
+}
+
+.bajaj-customer-card .inverted.secondary.label{
+    background-color:#c74a34;
+}
+
+.main-dealer-index{
+
+}
+.main-dealer-index .horizontal.divider{
+    margin:25px 0 25px 0;
+}
+
+.animate-congrats{
+    -webkit-animation: congratulations 1500ms  ease;
+}
+
+@keyframes congratulations {
+0%{
+transform: scale(0);
+opacity: 1;
+}
+70%{
+transform: scale(1.1);
+}
+100%{
+transform:  scale(1.0);
+opacity: 1;
+}
+
+}
+
+.bajaj-offer-coupon-pick .coupon-card .label{
+    color: #102765;
+}
+.bajaj-offer-coupon-pick .coupon-card>.content>.icon.header {
+    margin-bottom:0!important;
+}
+
+.bajaj-offer-coupon-pick .coupon-card i{
+    background-color: #e7e7e7;
+}
+.bajaj-offer-coupon-pick .coupon-card i:before{
+    color: #8295af;
+}
+.ui svg{
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.ui.cards>.centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width:100%;
+    margin: 0 auto;
+    
+
+}
+.ui.card-info{
+    
+    width:100%;
+    display:flex;
+    justify-content: center;
+
+}
+
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .ui.card-info {
+        width: 100%;
+        
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+=======
+>>>>>>> 893d206202d9ad48f1698d00c3ba67af15f66f11
+>>>>>>> 9ed689190dce5ba005e33e129a00e17a1f2b0815

@@ -1,0 +1,502 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="other/img/title-icon/apple-icon-57x57.png">
+
+    <link rel="apple-touch-icon" sizes="60x60" href="other/img/title-icon/apple-icon-60x60.png">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="other/img/title-icon/apple-icon-72x72.png">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="other/img/title-icon/apple-icon-76x76.png">
+
+    <link rel="apple-touch-icon" sizes="114x114" href="other/img/title-icon/apple-icon-114x114.png">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="other/img/title-icon/apple-icon-120x120.png">
+
+    <link rel="apple-touch-icon" sizes="144x144" href="other/img/title-icon/apple-icon-144x144.png">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="other/img/title-icon/apple-icon-152x152.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="other/img/title-icon/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="other/img/title-icon/android-icon-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="other/img/title-icon/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="96x96" href="other/img/title-icon/favicon-96x96.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="other/img/title-icon/favicon-16x16.png">
+
+    <link rel="manifest" href="other/img/title-icon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#004da8">
+
+    <meta name="msapplication-TileImage" content="other/img/ms-icon-144x144.png">
+
+    <meta name="theme-color" content="#004da8">
+
+
+    <!--
+    https://milligram.io/   -->
+
+
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <!-- <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"> -->
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/static/bajaj.css">
+    <link rel="stylesheet" href="/static/bajaj_local.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"> -->
+<style>
+    #loading{
+        -webkit-animation: rotation 2s  ease;
+}
+
+@keyframes rotation {
+    /*10%, 30%, 50%, 70%, 90% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }*/
+  /*  0%{
+        -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    10%{
+        -webkit-transform: rotateY(50deg);
+      transform: rotateY(50deg);
+    }
+    20% {
+      -webkit-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+    }
+    30%{
+        -webkit-transform: rotateY(120deg);
+      transform: rotateY(120deg);
+    }
+    40%{
+        -webkit-transform: rotateY(150deg);
+      transform: rotateY(150deg);
+    }
+    50%{
+        -webkit-transform: rotateY(170deg);
+      transform: rotateY(170deg);
+    }
+    60% {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+    70% {
+      -webkit-transform: rotateY(270deg);
+      transform: rotateY(270deg);
+    }
+    80% {
+      -webkit-transform: rotateY(300deg);
+      transform: rotateY(300deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }*/
+    0%{
+    transform: scale(0);
+    opacity: 1;
+  }
+  80%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform:  scale(1.0);
+    opacity: 1;
+  }
+
+}
+
+</style>
+
+
+</head>
+a<body class="bajajapp">
+
+    
+    <div class="ui fluid borderless menu mt-none bajaj-top-navbar">
+        <div class="ui container">
+            <a class="header item logo-link" href="/">
+                <img src="/static/images/bajaj-logo.png" class="ui small image">
+                <!-- <img src="/static/images/offer-small.png" class="ui small image"> -->
+
+            </a>
+            
+            <div class="right menu">
+                <!-- <div class="item">Add</div> -->
+                <div class="ui simple dropdown item">
+                        <i class="icon user circle"></i>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="header"><i class="icon chevron right"></i>SparkTest</div>
+                        <div class="item"><i class="icon user circle"></i>sparktest</div>
+                        <div class="item"><i class="icon map marker alternate"></i>Tinkune, Kathmandu</div>
+                        <!-- <div class="item">Tinkune, Kathmandu</div> -->
+                        <div class="divider"></div>
+                        <a class="item" href="/logout/"><i class="icon caret square right outline"></i>Logout</a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <section class="ui masterhead  ">
+        <div class="ui container clearfix">
+
+            <img class="ui centered image large" src="/static/images/offer-big.png" alt="">
+
+            
+            <!-- <button class="ui right floated button primary">New Customer</button> -->
+            
+
+            
+
+        </div>
+    </section>
+    
+
+
+    
+    <div class="ui container">
+        
+        
+        <div class="ui container centered   ">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="1049.497" viewBox="0 0 1049.497 282.248" class="ui centered image animate-congrats"dominant-baseline="middle" text-anchor="middle">
+                    <g id="Group_710" data-name="Group 710" transform="translate(-462.269 -232.416)">
+                        <text id="YOU_HAVE_WON_NRS._10000" data-name="YOU HAVE WON NRS. 10000" transform="translate(700 450)" fill="#003164" font-size="40" font-family="Roboto-Bold, Roboto" font-weight="700" dominant-baseline="middle" text-anchor="middle" text-align="center">
+                            <tspan x="22.5%" class="text"y="auto" dominant-baseline="middle"text-anchor="middle">YOU HAVE WON NRs. <tspan dominant-baseline="middle" text-anchor="middle "         fill="#fb1a3a" x="48%" y="auto">10000<tspan baseline-shift="super">*</tspan></tspan></tspan>
+                        </text>
+                        <g id="Group_682" data-name="Group 682" transform="translate(-2)">
+                            <text id="CONGRATULATIONS" transform="translate(961 387)" fill="#003164" font-size="76" font-family="Roboto-Bold, Roboto" font-weight="700"dominant-baseline="middle" text-anchor="middle">
+                                <tspan dominant-baseline="middle" text-anchor="middle" x="3%" y="auto">CONGRATULATIONS</tspan>
+                            </text>
+                            <path id="Path_1091" data-name="Path 1091" d="M-8254.834,10219.506v19.158l27.192-19.158Z" transform="translate(8861 -9724)" fill="#f1ea28"></path>
+                            <path id="Path_1092" data-name="Path 1092" d="M-8170.166,10045.844l10.506,29.046,17.3-21.63Z" transform="translate(8814 -9774)" fill="#eb4949"></path>
+                            <path id="Path_1101" data-name="Path 1101" d="M-8170.166,10045.844l10.506,29.046,17.3-21.63Z" transform="translate(9450 -9606)" fill="#eb4949"></path>
+                            <path id="Path_1093" data-name="Path 1093" d="M-7931.128,10102.515l-10.372-45.547h57.907Z" transform="translate(8834 -9751.602)" fill="#6e53ff" stroke="#707070" stroke-width="1"></path>
+                            <path id="Path_1102" data-name="Path 1102" d="M-7937.971,10074.108l-3.529-17.141h19.7Z" transform="translate(9316 -9581.713)" fill="#6e53ff" stroke="#707070" stroke-width="1"></path>
+                            <path id="Path_1094" data-name="Path 1094" d="M-7670.81,10190.459l3.09,24.721,23.484-12.36V10184.9Z" transform="translate(9158 -9803)" fill="#f1ea28"></path>
+                            <path id="Path_1106" data-name="Path 1106" d="M-7670.81,10190.459l3.09,24.721,23.484-12.36V10184.9Z" transform="translate(8380 -9885)" fill="#003164"></path>
+                            <path id="Path_1095" data-name="Path 1095" d="M-7864.5,10193.549l-28.8,7.661s22.87,13.97,24.563,13.97S-7864.5,10193.549-7864.5,10193.549Z" transform="translate(9172 -9947)" fill="#4ff34f"></path>
+                            <path id="Path_1109" data-name="Path 1109" d="M-7864.5,10193.549l-28.8,7.661s22.87,13.97,24.563,13.97S-7864.5,10193.549-7864.5,10193.549Z" transform="translate(8358 -9961)" fill="#f1ea28"></path>
+                            <path id="Path_1100" data-name="Path 1100" d="M-7864.5,10193.549l-28.8,7.661s22.87,13.97,24.563,13.97S-7864.5,10193.549-7864.5,10193.549Z" transform="translate(9044 -9919)" fill="#4ff34f"></path>
+                            <path id="Path_1096" data-name="Path 1096" d="M-7521.622,10071.182h44.188s-20.889,21.386-23.3,21.386S-7521.622,10071.182-7521.622,10071.182Z" transform="translate(8852 -9775)" fill="#eb4949"></path>
+                            <path id="Path_1108" data-name="Path 1108" d="M-7521.622,10071.182h44.188s-20.889,21.386-23.3,21.386S-7521.622,10071.182-7521.622,10071.182Z" transform="translate(13561.304 3645.266) rotate(69)" fill="#c74a34"></path>
+                            <path id="Path_1097" data-name="Path 1097" d="M-7504.75,10168.892l19.282-9.641-6.427,25.709Z" transform="translate(8852 -9775)" fill="#4ff34f"></path>
+                            <path id="Path_1103" data-name="Path 1103" d="M-7504.75,10168.892l19.282-9.641-6.427,25.709Z" transform="translate(8076 -9828)" fill="#4ff34f"></path>
+                            <path id="Path_1098" data-name="Path 1098" d="M-8150.7,10208.381v48.078l55.271-26.86Z" transform="translate(9395.354 -9912.506)" fill="#eb4949"></path>
+                            <path id="Path_1105" data-name="Path 1105" d="M-8150.7,10208.381v26l29.889-14.525Z" transform="translate(8941.354 -9924.506)" fill="#eb4949"></path>
+                            <path id="Path_1104" data-name="Path 1104" d="M-8150.7,10208.381v21.571l24.8-12.052Z" transform="translate(-167.322 -12601.74) rotate(-42)" fill="#eb4949"></path>
+                            <path id="Path_1107" data-name="Path 1107" d="M-8150.7,10208.381v21.571l24.8-12.052Z" transform="translate(-309.322 -12629.74) rotate(-42)" fill="#eb4949"></path>
+                            <path id="Path_1099" data-name="Path 1099" d="M-8303.35,10135.5l-7.231,16.521-19.281-16.521Z" transform="translate(9055 -9667)" fill="#6e53ff" stroke="#707070" stroke-width="1"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        
+        
+        
+    </div>
+    <br>
+
+
+    
+
+    <section class="ui container card-info">
+
+        
+
+
+
+
+<div class="ui cards ">
+    <div class="ui centered card bajaj-customer-card ">
+
+    <div class="content">
+
+        <!-- Customer Detail -->
+
+        <div class="ui top attached label primary inverted">Customer Info
+            
+        </div>
+        <div class="ui basic segment mt-none section-customer--info">
+            <div class="ui  relaxed divided list">
+                <div class="item">
+                    <div class="right floated content">dsjfsdk dkjlfskfjk </div>
+                    <div class="content">
+                        <div class="header"><i class="icon user outline"></i> Full Name:</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="right floated content">2165468465 </div>
+                    <div class="content">
+                        <div class="header"><i class="icon mobile alternate"></i> Phone </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="right floated content">e@spark.com.np </div>
+                    <div class="content">
+                        <div class="header"><i class="icon envelope outline"></i> Email </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="right floated content">5365468461351 </div>
+                    <div class="content">
+                        <div class="header"><i class="icon address card outline"></i> Citizenship </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="right floated content">Dhankuta </div>
+                    <div class="content">
+                        <div class="header"><i class="icon map pin"></i> district </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="right floated content">465465465165 </div>
+                    <div class="content">
+                        <div class="header">
+                            <i class="icon small key"></i>
+                            License </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="ui  ribbon blue label">Offer</div>
+
+
+
+        
+
+
+        <div class="ui vertical segment">
+
+            <div class="ui attached basic segment red ">
+                <!-- start of selected vehicle -->
+                <div class="ui top attached inverted secondary label">
+                    <i class="icon motorcycle"></i> Pulsar 220 F
+                    
+
+                    
+
+                    
+
+                    <a class="ui right floated" href="/customer/vehicle/edit/66/"><i class="icon edit outline small"></i></a>
+
+
+
+                    
+
+
+                    
+
+                </div>
+
+
+
+
+
+                <!-- <div class="ui red  horizontal label right floated">Not Purchased</div> -->
+
+
+
+                <div class="ui small feed">
+                    <div class="event">
+                        <div class="content">
+                            <div class="ui middle aligned divided list relaxed">
+                                <div class="item">
+                                    <div class="right floated content">
+                                        
+                                        <div class="ui label tag">
+                                            Rs 7000
+                                        </div>
+                                        <i class="icon check circle outline green"></i>
+                                        
+                                    </div>
+                                    <div class="content ">
+
+                                        <div class="header">
+                                            <div class="ui label large transparent-bg">
+                                                <i class="icon gift"></i> Offer1
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="right floated content">
+                                        
+                                        
+                                        <div data-tooltip="Only unlocked after purchase of vehicle" data-position="bottom right" data-inverted="">
+
+
+                                            <div class="ui label tag">
+                                                &nbsp;&nbsp;&nbsp;
+                                                <i class="icon question circle"></i>
+                                                &nbsp;&nbsp;&nbsp;
+                                            </div>
+
+                                            <i class="icon lock "></i>
+                                        </div>
+                                        
+
+                                        
+
+                                    </div>
+                                    <div class="content middle aligned">
+                                        <div class="header">
+                                            <div class="ui label large transparent-bg">
+                                                <i class="icon gift"></i> Offer2
+                                            </div>
+
+
+                                        </div>
+                                        <!-- <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div> -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of selected vehicle -->
+
+                
+                <!-- <div class="ui divider"></div> -->
+                <div class="extra content">
+                    <!-- <div class="ui compact message description"> -->
+                    <!-- Second offer will be unlocked only after the purchase. Purchase now? -->
+                    <!-- </div> -->
+                    <!-- <div class="ui pointing below  label small">
+                                        Purchase now?
+                                    </div> -->
+                    <h3>
+
+                        Purchase now?
+                    </h3>
+
+
+
+                    <div class="ui two buttons">
+                        <a class="ui primary green button mini " href="/customer-vehicle-purchase/66/">Yes</a>
+                        <a href="/" class="ui basic grey button">Later</a>
+                    </div>
+                    <div class="ui message mini   ">
+                        <div class="ui list">
+                            <span class="item">
+                                <b>*</b>: Offer will expire in 15 days of getting first offer
+                            </span>
+                            <span class="item">
+                                <b>*</b>: Received offer will be applicable to 25% TDS
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            
+
+
+
+        </div>
+
+
+
+        
+
+        
+
+        
+
+
+        <!-- <div class="ui left ribbon label">Offers</div>
+            <h4 class="ui sub header">Offers
+                <div class="ui red horizontal label right floated">Not purchased yet!</div>
+            </h4>
+            <div class="description">
+                Select a vehicle
+            </div> -->
+    </div>
+    <div class="ui fluid accordion extra content">
+        <h4 class="ui sub header title"><i class="icon dropdown"></i>Activity</h4>
+        <div class="ui small feed content">
+            <div class="event">
+                <div class="content">
+                    <div class="summary">
+                        <i class="right arrow icon"></i>Registered at SparkTest on March 17, 2019, 4:04 p.m.
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="event">
+                <div class="content">
+                    <div class="summary">
+                        <i class="right arrow icon"></i>Recieved value of Rs 7000 as
+                        first offer
+                    </div>
+                </div>
+            </div>
+            
+
+            
+
+            
+
+            
+
+        </div>
+    </div>
+
+</div>
+    
+    
+</div>
+
+
+
+
+
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="/static/bajaj.js?v=0.9.1"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.ui.steps .step{
+	flex-direction: column;
+}
+
+.ui.steps .step.active,.ui.steps .step.active .description,.ui.steps .step.active .title{
+	background-color: #2185d0;
+	color: white;
+}
+
+.ui.steps .active.step .icon{
+	color: #fff;
+}
+
+.ui.steps .step .title{
+	padding: 1rem 0 0;
+}

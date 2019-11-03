@@ -1,0 +1,220 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing page</title>
+     <!-- <link href="css/style1.css" rel="stylesheet"> -->
+    <!-- <link href="/css/commonfile.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+         *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .l-container{
+            width:100%;
+            height:100vh;
+            overflow-y:hidden;
+            grid-template-columns: 1fr;
+            grid-gap: 1vh;
+            grid-auto-rows:10vh 90vh;
+            
+        }
+        .bg-image{
+            background: url(../image/bg-image.png) ;
+            background-size:cover;
+            background-position: center;
+        } 
+        .container-size{
+            width:100%;
+            
+           
+        }
+        .main{
+            justify-items: center;
+            align-items: center;
+        }
+        
+        .nav-header{
+            width:90%;
+            height:inherit;
+            margin:0 auto;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+
+        }
+        
+        nav{
+            
+        }
+        nav ul{
+           display:flex;
+           justify-content: space-between; 
+           
+        }
+        nav ul li{
+            padding:0 20px;
+            list-style:none;
+        }
+        nav ul li a{
+            color:white;
+             text-decoration: none; 
+             font-family: 'Noto Sans', sans-serif;  
+             font-size:16px;
+             cursor: pointer;
+        }
+        nav ul li a:hover{
+            padding-left:10px;
+
+        }
+        .wrapper{
+            justify-items: center;
+            align-items: center;
+            
+
+        }
+        .wrapper--container{
+            display:grid;
+            /* grid-template-columns: 1fr 1fr; */
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+ 
+        } 
+        .wrapper--content{
+           display:flex;
+           align-items: center;
+           align-content: center;
+           flex-direction: column;
+        }
+        .wrapper--content-item img{
+            width:100%;
+            max-width: 550px;
+            height: auto;
+
+        }
+        .rotate {
+            animation: rotation 100s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+             }
+        }
+        
+    .fb {
+        background-color:floralwhite;
+        color: white;
+        background: #4267b2;
+        width:250px;
+        font-size: 14px;
+        cursor: pointer;
+
+    }
+        .fb:hover{
+  color:white;
+  opacity: 0.8;
+}
+
+    .btn {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    line-height: 20px;
+    text-decoration: none; 
+}
+        @media (max-width: 768px) {
+            .wrapper-item-1 {
+                display:none;
+                /* grid-template-columns: 1fr; */
+            }
+            .wrapper-item-2{
+                 grid-template-columns: 1fr; 
+            }
+        }
+
+    </style>
+   
+</head>
+<body>
+        <div class="l-container bg-image container-size">
+                <!-- "style="width:80%; margin: 0 auto;padding:10px;" -->
+            <div class="main" >
+                    <!-- style=" display:flex; justify-content: space-between; " -->
+                    <div class="nav-header" >
+                        <div class="brand-logo">
+                            <a href="/" class="logo"><img src="../image/brand-logo.png" alt=""></a>
+                        </div>
+                        
+                        <nav>
+                                <!-- style="margin-top:1em;" -->
+                            <ul style="margin-top:1em;">
+                            <li >
+                                    <!-- style="color:white; text-decoration: none; font-family: 'Noto Sans', sans-serif; " -->
+                                <a  href="" >ABOUT</a>
+                               
+                            </li>
+                            <li >
+                                <!-- style="color:white; text-decoration: none; font-family: 'Noto Sans', sans-serif; " -->
+                                <a  href="" >FAQ</a>
+                            </li> 
+                            </ul>  
+                        </nav>
+                        </div> 
+            </div>
+            
+    
+    
+                   
+                    
+           
+            
+            <div class= wrapper>
+              <div class="wrapper--container">
+                
+                <div class="wrapper--content wrapper-item-1">
+                        <img src="../image/luckydraw.png" class="rotate" width="auto" height="400px"/>
+    
+                </div>
+                <div class="wrapper--content wrapper-item-2">
+                    <div class="wrapper--content-item ">
+                        <img src="../image/BajajDashain2Logo.png" alt="" width="auto" height="300">
+                    </div>
+                    <div class="wrapper--content-item  ">
+                            <form method="post" class=" form form-container">
+                                    <div class="col buttonset" style="text-align:center">
+                                        <a href="Registration.html" id="showRightPush" class="fb btn"style="text-align:center">
+                                        <i  class="fa fa-facebook fa-fw" ></i> Login with Facebook
+                                        </a><br>
+                                       
+                                    </div>     
+                              </form>
+                    </div>
+                    
+    
+                </div>
+            </div>
+     </div>
+                  
+                
+ </div>
+ 
+
+</body>
+</html>

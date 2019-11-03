@@ -1,0 +1,259 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!--
+    https://milligram.io/   -->
+
+
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <!-- <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"> -->
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/static/bajaj.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+
+
+
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"> -->
+
+<style>
+    body {
+  background: gainsboro;
+  margin-left: 15px;
+
+}
+.ui.shape{
+    width:0px;
+
+}
+.shape {
+  .ui.note.card {
+    
+    text-align: center;
+    border-radius: 0;
+    box-shadow: none;
+    .corner.label,
+    .pin {
+      cursor: pointer;
+    }
+    &> .content {
+      .divider {
+        opacity: 0.5;
+      }
+      }
+      .button.transparent:first-of-type {
+       
+        
+        border-radius: 0;
+      }
+      .write {
+        transition: all 0.2s ease-in-out;
+        transform: scale(1);
+        &:hover {
+          transform: scale(1.7);
+        }
+      }
+    }
+    
+  }
+  // shapes transition will not fire correctly without this line
+  .ui.button {
+    transition: none !important;
+  }
+}
+
+.transparent.button {
+  background: transparent;
+  box-shadow: none;
+  &:hover,
+  &:focus {
+    background: transparent;
+  }
+}
+
+/*@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    60% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+}
+*/
+
+
+#loading{
+        -webkit-animation: rotation 8s  linear;
+}
+
+@keyframes rotation {
+    /*10%, 30%, 50%, 70%, 90% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }*/
+    0%{
+        -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    10%{
+        -webkit-transform: rotateY(50deg);
+      transform: rotateY(50deg);
+    }
+    20% {
+      -webkit-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+    }
+    30%{
+        -webkit-transform: rotateY(120deg);
+      transform: rotateY(120deg);
+    }
+    40%{
+        -webkit-transform: rotateY(150deg);
+      transform: rotateY(150deg);
+    }
+    50%{
+        -webkit-transform: rotateY(170deg);
+      transform: rotateY(170deg);
+    }
+    60% {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+    70% {
+      -webkit-transform: rotateY(270deg);
+      transform: rotateY(270deg);
+    }
+    80% {
+      -webkit-transform: rotateY(300deg);
+      transform: rotateY(300deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }
+}
+
+
+</style>
+</head>
+
+<body class="bajajapp">
+    
+    <div class="ui borderless menu mt-none">
+        <div class="ui container">
+            <a class="header item" href="/">
+                <img src="/static/images/logo.png" class="ui small image">
+            </a>
+            
+            <div class="right menu">
+                <!-- <div class="item">Add</div> -->
+                <div class="ui simple dropdown item">
+                    tinkune-bajaj <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <!-- <div class="header">Pokhara</div> -->
+                        <!-- <div class="item">Pokhara</div> -->
+                        <!-- <div class="divider"></div> -->
+                        <a class="item" href="/logout/">Logout (dealer1)</a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- rotate -->
+<div class="ui shape">
+  <div class="sides">
+    <div class="side active">
+      <div class="ui note ">
+        <div class="content">
+         
+
+          <img src="other/img/lottery.svg" class="write yellow square icon"style="width: 196px;height:162;">
+        </div>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="ui note  edit">
+        <div class="content">
+          <img id="loading" src="other/img/lottery.svg" class="write yellow square icon" style="width: 196px;height:162;">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<p class="ui grey header">Click <i class="yellow write square icon"></i></p>
+<!-- <div class="flip">
+    <img id="loading" src="other/img/lottery.svg" onfocus="myFunction(this.id) style="width: 100px;height:auto; text-align:center;">
+</div> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="/static/bajaj.js"></script>
+    <script type="text/javascript">
+        $('.ui.shape')
+            .shape();
+
+        $('.write')
+            .on('click', function() {
+            $('.shape')
+                .shape('flip over');
+                var $textarea = $('.shape textarea'),
+                    setHeight = $(this)
+        [0].scrollHeight;
+  
+            $textarea
+              .height(setHeight)
+               .focus();
+        });
+
+        $('.remove')
+          .on('click', function() {
+            $('.shape')
+              .shape('flip over');
+        });
+
+          // pin
+          $('.note.card .corner')
+            .on('click', function() {
+              $(this)
+                .parents('.side')
+                .find('.corner')
+                .toggleClass('yellow');
+            });
+
+    </script>
+    <script>
+        $('.ui.shape').click(function() {
+            $(this).toggleClass('active');
+        });
+</script>
+
+</body>
+
+</html>

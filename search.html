@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!--
+    https://milligram.io/   -->
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="static/semantic.min.css">
+    <link rel="stylesheet" href="static/bajaj.css">
+
+
+     <!--    font awesome link -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!--      <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"> 
+ -->
+
+</head>
+
+<body class="ui">
+    
+    <div class="ui borderless menu mt-none">
+        <div class="ui container">
+            <a class="header item" href="index.html">
+                <img src="static/images/logo.png" class="ui small image">
+            </a>
+            
+            <div class="right menu">
+                <!-- <div class="item">Add</div> -->
+                <div class="ui simple dropdown item">
+                    dealer1 <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <!-- <div class="header">Kathmandu</div> -->
+                        <!-- <div class="item">Kathmandu</div> -->
+                        <!-- <div class="divider"></div> -->
+                        <a class="item" href="/logout/">Logout (sanjay)</a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="is-active"><a href="#" aria-current="page">New Customer</a></li>
+        </ul>
+    </nav> -->
+
+    
+    <section class="ui masterhead txt-center middle">
+        <div class="ui container clearfix">
+            <h1 class="ui header left floated">
+                <img src="other/img/offer.png">
+            </h1>
+            
+
+        </div>
+    </section>
+    
+
+
+    
+
+    <section class="ui vertical segment txt-center middle ">
+        <div class="ui container ">
+        <div class="ui container mg-top">
+            
+
+<form action="/customer/search" method="GET">
+    <div class="ui fluid left icon  input">
+        <input type="text" id="search" placeholder="Search..." name="search_query" value=""style="width:100%;">
+        <i class="search icon"></i>
+    </div>
+    <!-- <input type="search" id="search" value="" placeholder=" Search...." Searchname="search_query" style="width:100%;"> -->
+    <br>
+    <div class="ui r-search">
+        <input type="radio" checked="checked" name="search_type" value="citizenship" >Citizenship No
+        <input type="radio"  name="search_type" value="license"> License No
+        <input class="btn btn-primary"style="float:right" type="submit" value="Search">
+        <input type='hidden' name='csrfmiddlewaretoken' value='KYRLKaspoMFsNei4MxpXKfyr2UNzFZap8lOSx0e9hT630S5OKtZO6UD58POVNJQg' />
+    </div>
+
+
+
+</form>
+        <div class="ui message segment info">
+            Please provide  customer's citizenship number.
+        </div>
+        </div>
+    </section>
+    <script src="static/semantic.min.js"></script>
+</body>
+
+</html>

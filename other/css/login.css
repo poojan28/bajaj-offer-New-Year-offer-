@@ -1,0 +1,71 @@
+body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background:#fcfcfc;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+
+}
+section{
+	width:40%;
+    margin:0 auto;
+    margin-top:50px;
+    font-size:1em;
+}
+
+form{
+	width:500px;
+	margin:0 auto;
+	display:flex;
+	flex-wrap: wrap;
+}
+.nav-color{
+	background: linear-gradient(#f6f6f6,#f2f2f2);
+}
+.form-group{
+
+	width:400px;
+	margin: 10px;
+	font-size: 1.2em;
+	background:white;
+	border:1px solid white;
+	border-radius: 8px;
+}
+form button{
+	margin:10px;
+}
+.form-group input{
+	margin-bottom: 12px;
+}
+
+		/*css code for search.html*/
+.container{
+	width:100%;
+	margin-top:90px;
+	text-align:center;
+
+}
+.bajaj-image{
+	width:400px;
+	text-align: center;
+}
+.search{
+	width:inherit;
+	text-align: justify;
+	margin-top:30px;
+}
+.search input{
+	width:100%;
+	border-radius: 24px;
+	padding:8px;
+
+}
+.radio-btn{
+	width:100%;
+	text-align: justify;
+	margin-top:10px;
+}
+.radio-btn input:last-child{
+	padding-left:20px;
+}
